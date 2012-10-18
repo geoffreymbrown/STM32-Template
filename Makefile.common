@@ -33,6 +33,12 @@ vpath %.c $(CORE)
 vpath %.c $(PERIPH)/src
 vpath %.c $(DEVICE)
 
+# Search path for Library
+
+vpath %.c $(TEMPLATEROOT)/Library/ff9/src
+vpath %.c $(TEMPLATEROOT)/Library/ff9/src/option
+vpath %.c $(TEMPLATEROOT)/Library
+
 #  Processor specific
 
 PTYPE = STM32F10X_MD_VL 
@@ -47,6 +53,7 @@ LDFLAGS+= -T$(LDSCRIPT) -mthumb -mcpu=cortex-m3
 CFLAGS+= -mcpu=cortex-m3 -mthumb 
 CFLAGS+= -I$(TEMPLATEROOT) -I$(DEVICE) -I$(CORE) -I$(PERIPH)/inc -I.
 CFLAGS+= -D$(PTYPE) -DUSE_STDPERIPH_DRIVER $(FULLASSERT)
+CFLAGE+= -I$(TEMPLATEROOT)/Library/ff9/src -I$(TEMPLATEROOT)/Library
 
 # Build executable 
 
