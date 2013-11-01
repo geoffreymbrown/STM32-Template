@@ -4,6 +4,7 @@ Linker script for STM32F10x_128K_8K
 modified from
 
 http://www.codesourcery.com/archives/arm-gnu/msg02972.html
+http://communities.mentor.com/community/cs/archives/arm-gnu/msg02972.html
 */
 
 /*
