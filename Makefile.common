@@ -53,7 +53,7 @@ LDFLAGS+= -T$(LDSCRIPT) -mthumb -mcpu=cortex-m3
 CFLAGS+= -mcpu=cortex-m3 -mthumb 
 CFLAGS+= -I$(TEMPLATEROOT) -I$(DEVICE) -I$(CORE) -I$(PERIPH)/inc -I.
 CFLAGS+= -D$(PTYPE) -DUSE_STDPERIPH_DRIVER $(FULLASSERT)
-CFLAGE+= -I$(TEMPLATEROOT)/Library/ff9/src -I$(TEMPLATEROOT)/Library
+CFLAGS+= -I$(TEMPLATEROOT)/Library/ff9/src -I$(TEMPLATEROOT)/Library
 
 # Build executable 
 
